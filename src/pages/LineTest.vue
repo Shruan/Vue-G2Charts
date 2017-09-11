@@ -26,7 +26,7 @@ export default {
       {'mzkId': 112, 'strftime': '2017-01-15', 'value': 9306918},
       {'mzkId': 112, 'strftime': '2017-01-16', 'value': 9315641}
     ]
-    // console.log(this.serverData)
+    console.log(this.serverData)
   },
   methods: {
 

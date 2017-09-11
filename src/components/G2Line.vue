@@ -17,6 +17,7 @@ export default {
       type: Array,
       default () {
         return {
+          // G2官网上的模拟数据
           data: [
             {'mzkId': 112, 'strftime': '2017-01-11', 'value': 9275501},
             {'mzkId': 112, 'strftime': '2017-01-12', 'value': 9281904},
@@ -28,6 +29,7 @@ export default {
         }
       }
     },
+    // 绑定div上的唯一id选择选择器
     id: String
   },
   // watch: {
@@ -40,7 +42,7 @@ export default {
     // this.drawChart()
   },
   mounted () {
-    this.drawChart(this.charData)       // 第一步想到的是创建的时候更新图表，但是这个不适用于异步请求接口获取相关数据，所以采用下面的监听的方式
+    this.drawChart(this.charData)
   },
   methods: {
     drawChart (datas) {
