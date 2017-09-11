@@ -26,7 +26,7 @@ export default {
       {name: 'Opera', value: 0.91},
       {name: 'Proprietary or Undetectable', value: 0.2}
     ]
-    // console.log(this.serverData)
+    console.log(this.serverData)
   },
   methods: {
 

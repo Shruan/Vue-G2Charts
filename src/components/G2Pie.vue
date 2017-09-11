@@ -14,6 +14,7 @@ export default {
   },
   props: {
     charData: Array,
+    // 绑定div上的唯一id选择选择器
     id: String
   },
   created () {
