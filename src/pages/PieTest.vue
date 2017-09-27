@@ -1,6 +1,7 @@
 <template>
   <div>
-    <g2-pie :id="c1" id="c1" :charData="serverData"></g2-pie>
+    <h2>饼状图</h2>
+    <g2-pie :id="c1" id="c1" :chartData="serverData"></g2-pie>
   </div>
 </template>
 
