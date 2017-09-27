@@ -13,7 +13,7 @@ export default {
     }
   },
   props: {
-    charData: {
+    chartData: {
       type: Array,
       default () {
         return {
@@ -33,7 +33,7 @@ export default {
     id: String
   },
   // watch: {
-  //   charData (val, oldVal) {
+  //   chartData (val, oldVal) {
   //     console.log('new: %s, old: %s', val, oldVal)
   //     this.drawChart(val)
   //   }
@@ -42,7 +42,7 @@ export default {
     // this.drawChart()
   },
   mounted () {
-    this.drawChart(this.charData)
+    this.drawChart(this.chartData)
   },
   methods: {
     drawChart (datas) {

@@ -1,6 +1,7 @@
 <template>
   <div>
-    <g2-line :id="c1" id="c1" :charData="serverData"></g2-line>
+    <h2>线性图</h2>
+    <g2-line :id="c1" id="c1" :chartData="serverData"></g2-line>
   </div>
 </template>
 
