@@ -1,7 +1,9 @@
-# g2chartusebyvue
-
+# Vue-G2Charts
 > use G2 charts by vue.js
 
+### 示例
+ ![image](/Users/qiushiyuan/Downloads/WechatIMG1629.jpeg)   
+ 
 ## Build Setup
 
 ``` bash
