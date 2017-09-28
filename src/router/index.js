@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import LineTest from '@/pages/LineTest'
 import PieTest from '@/pages/PieTest'
 import HistogramTest from '@/pages/HistogramTest'
+import MultipleLineTest from '@/pages/MultipleLineTest'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/histogram',
       name: '线性图表',
       component: HistogramTest
+    },
+    {
+      path: '/multipleLine',
+      name: '线性图表',
+      component: MultipleLineTest
     }
   ]
 })
