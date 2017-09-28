@@ -16,17 +16,17 @@ export default new Router({
     },
     {
       path: '/pie',
-      name: '线性图表',
+      name: '饼图',
       component: PieTest
     },
     {
       path: '/histogram',
-      name: '线性图表',
+      name: '柱状图',
       component: HistogramTest
     },
     {
       path: '/multipleLine',
-      name: '线性图表',
+      name: '多线图',
       component: MultipleLineTest
     }
   ]

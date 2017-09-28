@@ -1,13 +1,23 @@
 <template>
   <div id="app">
+    <div class="nav">
+      <tp-nav></tp-nav>
+    </div>
     <!-- <img src="./assets/logo.png"> -->
-    <router-view></router-view>
+    <div class="content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
+import TpNav from '@/components/TpNav'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    TpNav
+  }
 }
 </script>
 
@@ -19,5 +29,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.nav {
+  position: fixed;
+}
+.content {
+  margin-left: 200px;
 }
 </style>
