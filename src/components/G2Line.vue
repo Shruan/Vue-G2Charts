@@ -50,7 +50,7 @@ export default {
       let data = datas
       this.chart = new G2.Chart({
         id: this.id,
-        width: 1000,
+        forceFit: true,
         height: 250
       })
       this.chart.source(data, {
