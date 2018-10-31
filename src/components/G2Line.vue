@@ -1,13 +1,13 @@
 <template>
-  <div :id="id" style="max-width:1000px; margin: 0 auto">
+<div :id="id" style="max-width:1000px; margin: 0 auto">
 
-  </div>
+</div>
 </template>
 
 <script>
 import G2 from 'g2'
 export default {
-  data () {
+  data() {
     return {
       chart: null
     }
@@ -18,13 +18,36 @@ export default {
       default () {
         return {
           // G2官网上的模拟数据
-          data: [
-            {'mzkId': 112, 'strftime': '2017-01-11', 'value': 9275501},
-            {'mzkId': 112, 'strftime': '2017-01-12', 'value': 9281904},
-            {'mzkId': 112, 'strftime': '2017-01-13', 'value': 9290777},
-            {'mzkId': 112, 'strftime': '2017-01-14', 'value': 9297913},
-            {'mzkId': 112, 'strftime': '2017-01-15', 'value': 9306918},
-            {'mzkId': 112, 'strftime': '2017-01-16', 'value': 9315641}
+          data: [{
+              'mzkId': 112,
+              'strftime': '2017-01-11',
+              'value': 9275501
+            },
+            {
+              'mzkId': 112,
+              'strftime': '2017-01-12',
+              'value': 9281904
+            },
+            {
+              'mzkId': 112,
+              'strftime': '2017-01-13',
+              'value': 9290777
+            },
+            {
+              'mzkId': 112,
+              'strftime': '2017-01-14',
+              'value': 9297913
+            },
+            {
+              'mzkId': 112,
+              'strftime': '2017-01-15',
+              'value': 9306918
+            },
+            {
+              'mzkId': 112,
+              'strftime': '2017-01-16',
+              'value': 9315641
+            }
           ]
         }
       }
@@ -38,14 +61,14 @@ export default {
   //     this.drawChart(val)
   //   }
   // },
-  created () {
+  created() {
     // this.drawChart()
   },
-  mounted () {
+  mounted() {
     this.drawChart(this.chartData)
   },
   methods: {
-    drawChart (datas) {
+    drawChart(datas) {
       this.chart && this.chart.destroy()
       let data = datas
       this.chart = new G2.Chart({
@@ -64,7 +87,12 @@ export default {
         }
       })
       this.chart.line().position('strftime*value').size(2)
-      this.chart.point().position('strftime*value').color('#757373').shape('circle').label('value', {offset: 20, label: {fill: '#000'}})
+      this.chart.point().position('strftime*value').color('#757373').shape('circle').label('value', {
+        offset: 20,
+        label: {
+          fill: '#000'
+        }
+      })
       this.chart.animate(false)
       this.chart.render()
       console.log(datas)
